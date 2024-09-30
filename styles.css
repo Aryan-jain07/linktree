@@ -1,0 +1,112 @@
+/* Import Fira Code */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Fira Code', monospace; /* Use Fira Code for a coding vibe */
+    background: url(https://static.vecteezy.com/system/resources/previews/002/949/141/non_2x/programming-code-coding-or-hacker-background-vector.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Rest of the styles remain the same */
+.container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Align profile section to the left */
+.profile {
+    color: #fff;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.photo {
+    border: 4px solid #03bef2;
+    padding: 4px;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: url("https://images.alphacoders.com/961/thumb-1920-961110.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.profile_name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.custom-btn {
+    width: 200px;
+    height: 45px;
+    margin: 12px 0;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: "Fira Code", monospace; /* Apply Fira Code for buttons too */
+    color: #000;
+    background: linear-gradient(135deg, #26d0ee, #03bef2);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.custom-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background: linear-gradient(135deg, #1a73e8, #0044cc);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profile {
+        margin-bottom: 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .custom-btn {
+        width: 100%;
+    }
+}
